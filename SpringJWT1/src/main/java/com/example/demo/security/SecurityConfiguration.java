@@ -62,4 +62,25 @@ UserDetailsService userDetailsService() {
         manger.createUser(User.withUsername("ishwar").password(passwordEncoder().encode("ishwar")).roles("Admin").build());
         return manger;
     }
+
+ ==========================================================================================================
+ for Autharasation helping methods 
+     @GetMapping("log")
+    public String getLoggedDetails(Principal principal) 
+    {
+    	return principal.getName()+"";
+    }
+
+    @GetMapping("/me")
+    public String getLoggedInUser(Authentication authentication) {
+        Object principal = authentication.getPrincipal(); // Usually UserDetails
+        String username = authentication.getName(); // Convenience method for principal.getName()
+        var authorities = authentication.getAuthorities(); // Roles/permissions
+        return "User: " + username + " Roles: " + authorities;
+    }
+	Authentication context = SecurityContextHolder.getContext().getAuthentication();
+System.err.println(context.getName()+" "+context.getAuthorities()+" "+context.getDetails());
+
+
 */
+
