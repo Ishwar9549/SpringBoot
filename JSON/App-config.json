@@ -1,0 +1,142 @@
+{
+    "configs": [
+        {
+            "keyName": "MAX_LOGIN_ATTEMPTS",
+            "value": "5",
+            "type": "INTEGER",
+            "description": "Maximum allowed consecutive failed login attempts before the account is locked."
+        },
+        {
+            "keyName": "ACCOUNT_LOCK_DURATION_MINUTES",
+            "value": "15",
+            "type": "INTEGER",
+            "description": "Duration (in minutes) for which account remains locked after exceeding max login attempts."
+        },
+        {
+            "keyName": "OTP_EXPIRY_MINUTES",
+            "value": "10",
+            "type": "INTEGER",
+            "description": "Time (in minutes) before an OTP expires."
+        },
+        {
+            "keyName": "MAX_OTP_RESEND_ATTEMPTS",
+            "value": "3",
+            "type": "INTEGER",
+            "description": "Maximum number of times user can request OTP resend."
+        },
+        {
+            "keyName": "PASSWORD_RESET_TOKEN_EXPIRY_MINUTES",
+            "value": "30",
+            "type": "INTEGER",
+            "description": "Duration (in minutes) a password reset token remains valid."
+        },
+        {
+            "keyName": "SESSION_TIMEOUT_MINUTES",
+            "value": "60",
+            "type": "INTEGER",
+            "description": "Session timeout duration for logged-in users in minutes."
+        },
+        {
+            "keyName": "JWT_TOKEN_EXPIRY_MINUTES",
+            "value": "120",
+            "type": "INTEGER",
+            "description": "JWT token expiration time in minutes."
+        },
+        {
+            "keyName": "REFRESH_TOKEN_EXPIRY_DAYS",
+            "value": "7",
+            "type": "INTEGER",
+            "description": "Number of days before refresh token expires."
+        },
+        {
+            "keyName": "PASSWORD_MIN_LENGTH",
+            "value": "8",
+            "type": "INTEGER",
+            "description": "Minimum required password length for new registrations."
+        },
+        {
+            "keyName": "PASSWORD_COMPLEXITY_REQUIRED",
+            "value": "true",
+            "type": "BOOLEAN",
+            "description": "If true, passwords must contain upper, lower, numeric and special characters."
+        },
+        {
+            "keyName": "ENABLE_EMAIL_VERIFICATION",
+            "value": "true",
+            "type": "BOOLEAN",
+            "description": "If true, email verification is mandatory for new user registration."
+        },
+        {
+            "keyName": "ENABLE_MOBILE_VERIFICATION",
+            "value": "true",
+            "type": "BOOLEAN",
+            "description": "If true, mobile number verification via OTP is mandatory."
+        },
+        {
+            "keyName": "SUPPORT_EMAIL",
+            "value": "support@greentree.com",
+            "type": "STRING",
+            "description": "Primary support email for user inquiries."
+        },
+        {
+            "keyName": "SUPPORT_PHONE",
+            "value": "+91-9876543210",
+            "type": "STRING",
+            "description": "Customer support contact number."
+        },
+        {
+            "keyName": "FORGOT_PASSWORD_COOLDOWN_MINUTES",
+            "value": "2",
+            "type": "INTEGER",
+            "description": "Time (in minutes) before user can request another forgot password email."
+        },
+        {
+            "keyName": "LOGIN_AUDIT_LOG_ENABLED",
+            "value": "true",
+            "type": "BOOLEAN",
+            "description": "Enable or disable login activity audit logs."
+        },
+        {
+            "keyName": "MAINTENANCE_MODE_ENABLED",
+            "value": "false",
+            "type": "BOOLEAN",
+            "description": "If true, application enters maintenance mode and user logins are blocked."
+        },
+        {
+            "keyName": "MAX_CONCURRENT_SESSIONS_PER_USER",
+            "value": "2",
+            "type": "INTEGER",
+            "description": "Number of concurrent active sessions allowed per user."
+        },
+        {
+            "keyName": "ALLOW_SOCIAL_LOGIN",
+            "value": "true",
+            "type": "BOOLEAN",
+            "description": "If true, allows login via Google or other OAuth providers."
+        },
+        {
+            "keyName": "FRONTEND_BASE_URL",
+            "value": "https://portal.greentree.com",
+            "type": "STRING",
+            "description": "Frontend base URL used for redirects and email links."
+        },
+        {
+            "keyName": "EMAIL_TEMPLATE_BASE_PATH",
+            "value": "/templates/email/",
+            "type": "STRING",
+            "description": "File system path or S3 path where email templates are stored."
+        },
+        {
+            "keyName": "DEFAULT_TIMEZONE",
+            "value": "Asia/Kolkata",
+            "type": "STRING",
+            "description": "Default timezone for date/time operations across services."
+        },
+        {
+            "keyName": "API_RATE_LIMIT_PER_MINUTE",
+            "value": "100",
+            "type": "INTEGER",
+            "description": "Number of API requests allowed per user per minute."
+        }
+    ]
+}
